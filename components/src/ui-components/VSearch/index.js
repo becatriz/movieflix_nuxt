@@ -8,7 +8,7 @@ export const VSearch = {
 
   render() {
     return (
-      <div class="container">
+      <div class="container-search">
         <input
           vModel={this.search}
           type="text"
@@ -16,11 +16,11 @@ export const VSearch = {
           placeholder="Pesquisar filmes..."
           class="search__box"
         />
-        <i
+        {/* <i
           class="fas fa-search search__icon"
           id="icon"
           onClick={() => this.$emit("search", this.search)}
-        ></i>
+        ></i> */}
       </div>
     );
   }

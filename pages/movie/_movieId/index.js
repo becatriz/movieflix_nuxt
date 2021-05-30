@@ -36,8 +36,6 @@ export default {
                 class="movie__poster"
                 src={this.response.Poster}
                 alt="Poster filme"
-                width="60%"
-                height="60%"
               />
             </div>
           </div>

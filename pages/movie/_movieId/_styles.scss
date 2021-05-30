@@ -13,7 +13,7 @@
 .movie {
   @extend %heading-os-18-600;
   padding: 4rem;
-  width: 60%;
+  max-width: 60%;
   color: color("neutral", "white");
 
   @media (max-width: 780px) {
