@@ -33,7 +33,7 @@ export default {
                 </p>
               </div>
               <img
-                class="container-movie__poster"
+                class="movie__poster"
                 src={this.response.Poster}
                 alt="Poster filme"
               />

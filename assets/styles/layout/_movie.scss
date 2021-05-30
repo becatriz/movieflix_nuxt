@@ -1,5 +1,15 @@
 @import "@/assets/styles/layout/colors", "@/assets/styles/layout/typography";
 
+.container-movie {
+  display: flex;
+  margin-top: 5%;
+  margin-left: 10%;
+  @media (max-width: 780px) {
+    margin-top: 15%;
+    display: block;
+  }
+}
+
 .movie {
   @extend %heading-os-18-600;
   padding: 4rem;
@@ -14,5 +24,14 @@
   &__title {
     font-size: 48px;
     line-height: 1;
+  }
+
+  &__poster {
+    width: 30%;
+    border-radius: 3px;
+
+    @media (max-width: 780px) {
+      width: 90%;
+    }
   }
 }
