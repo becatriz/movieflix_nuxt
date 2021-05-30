@@ -1,0 +1,26 @@
+{
+  "name": "blog-before",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "server": "json-server --watch db.json"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.5",
+    "core-js": "^3.9.1",
+    "json-server": "^0.16.3",
+    "nuxt": "^2.15.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
+    "@vue/babel-preset-jsx": "^1.2.4",
+    "fibers": "^5.0.0",
+    "sass": "~1.32.12",
+    "sass-loader": "10"
+  }
+}

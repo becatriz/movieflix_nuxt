@@ -1,0 +1,14 @@
+.error-page {
+  color: white;
+  text-align: center;
+}
+
+.error-page a {
+  text-decoration: none;
+  color: red;
+}
+
+.error-page a:hover,
+.error-page a:active {
+  color: salmon;
+}

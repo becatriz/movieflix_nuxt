@@ -1,0 +1,45 @@
+@import "@/assets/styles/layout/colors", "@/assets/styles/layout/typography";
+
+.logo {
+  width: 12%;
+  top: 18%;
+  position: absolute;
+
+  @media (max-width: 680px) {
+    width: 23%;
+    top: 30%;
+  }
+}
+
+.menu {
+  position: relative;
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+    background: black;
+  }
+
+  li {
+    margin-right: 1.5rem;
+    display: inline;
+  }
+
+  a {
+    @extend %heading-os-18-600;
+    padding: 1.5rem 1rem;
+    text-decoration: none;
+    color: color("neutral", "white");
+    display: inline-block;
+  }
+
+  :hover {
+    color: red;
+  }
+}
+
+h1 {
+  @extend %heading-os-18-700;
+  text-align: center;
+}

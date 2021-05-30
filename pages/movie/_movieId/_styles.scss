@@ -1,0 +1,32 @@
+@import "@/assets/styles/layout/colors", "@/assets/styles/layout/typography";
+
+.container-movie {
+  display: flex;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.movie {
+  @extend %heading-os-18-600;
+  padding: 4rem;
+  width: 60%;
+  color: color("neutral", "white");
+
+  &__title {
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  &__poster {
+    width: 30%;
+    border-radius: 3px;
+  }
+}
+i {
+  font-size: 1.5rem;
+  margin-left: 5rem;
+  cursor: pointer;
+  position: absolute;
+  padding: 0.7rem;
+  color: red;
+}
