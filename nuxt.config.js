@@ -45,8 +45,7 @@ export default {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,600,700&display=swap",
-        href: "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          "https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,600,700&display=swap"
       }
     ]
   },
