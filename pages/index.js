@@ -1,6 +1,6 @@
 import { VSearch, VCards, VLoading } from "@/components/src/ui-components";
 
-import { mapMutations, mapState } from "vuex";
+import { mapMutations } from "vuex";
 
 import "./_styles.scss";
 
@@ -10,20 +10,18 @@ export default {
   data: () => ({
     query: "",
     page: "",
-    response: [],
-    loading: true
+    loading: false
   }),
 
-  computed: {
-    ...mapState("Movie", ["movies"])
-  },
+  async asyncData({ $axios, store }, query = "marvel", pagination = "1") {
+    const { movies } = store.state.Movie;
 
-  async created() {
-    if (this.movies.query) {
-      await this.getMovies(this.movies.query);
-    } else {
-      await this.getMovies("marvel");
-    }
+    if (movies.query) query = movies.query;
+
+    const response = await $axios.$get(
+      `https://www.omdbapi.com/?apikey=${process.env.VUE_APP_API_KEY}&/&s=${query}&page=${pagination}`
+    );
+    return { response };
   },
 
   methods: {
