@@ -19,6 +19,8 @@ export const VHeader = {
               class="logo"
               src="https://fontmeme.com/permalink/210529/a10ff39362675073624aaa0ac10d34fe.png"
               alt="imagem logo"
+              width="60%"
+              height="60%"
             />
           </a>
         </nav>

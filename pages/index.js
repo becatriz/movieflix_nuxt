@@ -71,6 +71,8 @@ export default {
                           class="card-container__movie"
                           src={movies.Poster}
                           alt="Poster filme"
+                          width="60%"
+                          height="60%"
                         />
                       </div>
                     </VCards>

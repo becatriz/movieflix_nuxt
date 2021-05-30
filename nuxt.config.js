@@ -41,11 +41,6 @@ export default {
         rel: "icon",
         type: "image/x-icon",
         href: "/favicon.ico"
-      },
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,600,700&display=swap"
       }
     ]
   },
