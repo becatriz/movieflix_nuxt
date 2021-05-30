@@ -21,12 +21,12 @@ export default {
       {
         hid: "og:title",
         property: "og:title",
-        content: "My Amazing Blog on The Joy of Painting"
+        content: "MovieFlix seu site de filmes"
       },
       {
         hid: "og:description",
         property: "og:description",
-        content: "Articles focused on the beautiful art of landscape painting."
+        content: "Filmes que você ama para rever quando quiser."
       },
       {
         hid: "og:image",
@@ -59,7 +59,14 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxtjs/dotenv"],
+  buildModules: ["@nuxtjs/dotenv", "@nuxtjs/fontawesome"],
+
+  fontawesome: {
+    icons: {
+      solid: true,
+      brands: true
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxtjs/axios"],

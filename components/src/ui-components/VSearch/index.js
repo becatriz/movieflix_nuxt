@@ -16,11 +16,12 @@ export const VSearch = {
           placeholder="Pesquisar filmes..."
           class="search__box"
         />
-        {/* <i
-          class="fas fa-search search__icon"
-          id="icon"
+        <span
           onClick={() => this.$emit("search", this.search)}
-        ></i> */}
+          class="search__icon"
+        >
+          <font-awesome-icon icon={["fas", "search"]} />
+        </span>
       </div>
     );
   }

@@ -1,4 +1,4 @@
-@import "@/assets/styles/layout/colors", "@/assets/styles/layout/typography";
+@import "@/assets/styles/layout/typography";
 
 .container-movie {
   display: flex;
@@ -14,7 +14,7 @@
   @extend %heading-os-18-600;
   padding: 4rem;
   max-width: 60%;
-  color: color("neutral", "white");
+  color: white;
 
   @media (max-width: 780px) {
     padding: 1rem;

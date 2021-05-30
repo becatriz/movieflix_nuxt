@@ -2,11 +2,10 @@
   transition: transform 0.2s;
   margin: 0 auto;
 
-  &__movie {
-    width: 70%;
-    cursor: pointer;
-    margin: 20px;
-    border-radius: 3px;
+  img {
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
 
     @media (max-width: 780px) {
       width: 50%;

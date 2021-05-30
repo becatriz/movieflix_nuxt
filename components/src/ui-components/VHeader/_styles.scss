@@ -1,4 +1,4 @@
-@import "@/assets/styles/layout/colors", "@/assets/styles/layout/typography";
+@import "@/assets/styles/layout/typography";
 
 .logo {
   width: 12%;
@@ -29,7 +29,7 @@
     @extend %heading-os-18-600;
     padding: 1.5rem 1rem;
     text-decoration: none;
-    color: color("neutral", "white");
+    color: white;
     display: inline-block;
   }
 

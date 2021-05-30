@@ -10,13 +10,21 @@
     "server": "json-server --watch db.json"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@nuxtjs/axios": "^5.13.5",
     "core-js": "^3.9.1",
     "json-server": "^0.16.3",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "nuxt-fontawesome": "^0.4.0"
   },
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/fontawesome": "^1.1.2",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
     "@vue/babel-preset-jsx": "^1.2.4",
     "fibers": "^5.0.0",

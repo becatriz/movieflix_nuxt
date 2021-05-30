@@ -1,5 +1,3 @@
-import "./_styles.scss";
-
 export default {
   name: "Movies",
 
@@ -16,21 +14,18 @@ export default {
       <div>
         {Object.values(this.response).length > 0 && (
           <div>
-            <i
-              onClick={() => this.$router.go(-1)}
-              class="fas fa-arrow-left"
-            ></i>
+            <span onClick={() => this.$router.go(-1)} class="icon">
+              <font-awesome-icon icon={["fas", "arrow-left"]} />
+            </span>
             <div class="container-movie">
               <div class="movie">
                 <span class="movie__title">{this.response.Title}</span>
-                <p class="movie__year">Ano: {this.response.Year}</p>
-                <p class="movie__genre">Genre: {this.response.Genre}</p>
-                <p class="movie__writer">Writer: {this.response.Writer}</p>
-                <p class="movie__actors">Actors: {this.response.Actors}</p>
+                <p>Ano: {this.response.Year}</p>
+                <p>Genre: {this.response.Genre}</p>
+                <p>Writer: {this.response.Writer}</p>
+                <p>Actors: {this.response.Actors}</p>
                 <p class="movie__plot">Plot: {this.response.Plot}</p>
-                <p class="movie__language">
-                  Language: {this.response.Language}
-                </p>
+                <p>Language: {this.response.Language}</p>
               </div>
               <img
                 class="movie__poster"
