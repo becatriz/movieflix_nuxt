@@ -67,11 +67,7 @@ export default {
                   {movies.Poster != "N/A" && (
                     <VCards>
                       <div slot="card">
-                        <img
-                          class="card-container__movie"
-                          src={movies.Poster}
-                          alt="Poster filme"
-                        />
+                        <img src={movies.Poster} alt="Poster filme" />
                       </div>
                     </VCards>
                   )}

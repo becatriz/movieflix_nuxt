@@ -4,7 +4,11 @@
   background-color: #1e272e;
   position: absolute;
   border-radius: 10px;
+  top: 3%;
+  left: 15%;
+
   @media (max-width: 780px) {
+    top: 15%;
     width: 80%;
   }
 }

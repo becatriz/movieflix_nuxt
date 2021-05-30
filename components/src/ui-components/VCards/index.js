@@ -4,7 +4,7 @@ export const VCards = {
   name: "VCards",
   functional: true,
   render(h, { slots }) {
-    return <div class="card">{slots().card}</div>;
+    return <div class="card__movie">{slots().card}</div>;
   }
 };
 

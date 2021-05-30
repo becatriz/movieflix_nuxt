@@ -1,6 +1,18 @@
 .card {
   transition: transform 0.2s;
   margin: 0 auto;
+
+  &__movie {
+    width: 70%;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 3px;
+
+    @media (max-width: 780px) {
+      width: 50%;
+      grid-template-columns: auto;
+    }
+  }
 }
 
 .card:hover {
