@@ -54,26 +54,32 @@ export default {
   render() {
     return (
       <div>
-        <VSearch class="search" onSearch={search => this.getMovies(search)} />
         {this.loading ? (
           <VLoading class="loading" />
         ) : (
-          <div class="card-container">
-            {this.response.Search.map(movies => (
-              <nuxt-link to={`/movie/${movies.imdbID}`}>
-                {movies.Poster != "N/A" && (
-                  <VCards>
-                    <div slot="card">
-                      <img
-                        class="card-container__movie"
-                        src={movies.Poster}
-                        alt="Poster filme"
-                      />
-                    </div>
-                  </VCards>
-                )}
-              </nuxt-link>
-            ))}
+          <div>
+            <VSearch
+              class="search"
+              onSearch={search => this.getMovies(search)}
+            />
+
+            <div class="card-container">
+              {this.response.Search.map(movies => (
+                <nuxt-link to={`/movie/${movies.imdbID}`}>
+                  {movies.Poster != "N/A" && (
+                    <VCards>
+                      <div slot="card">
+                        <img
+                          class="card-container__movie"
+                          src={movies.Poster}
+                          alt="Poster filme"
+                        />
+                      </div>
+                    </VCards>
+                  )}
+                </nuxt-link>
+              ))}
+            </div>
           </div>
         )}
       </div>
