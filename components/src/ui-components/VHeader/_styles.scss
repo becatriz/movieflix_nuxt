@@ -5,9 +5,8 @@
   top: 18%;
   position: absolute;
 
-  @media (max-width: 680px) {
+  @media (max-width: 780px) {
     width: 23%;
-    top: 30%;
   }
 }
 
@@ -37,9 +36,4 @@
   :hover {
     color: red;
   }
-}
-
-h1 {
-  @extend %heading-os-18-700;
-  text-align: center;
 }

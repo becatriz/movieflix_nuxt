@@ -1,6 +1,10 @@
 .search {
-  top: 2%;
-  left: 50%;
+  top: 3%;
+  left: 15%;
+
+  @media (max-width: 780px) {
+    top: 15%;
+  }
 }
 
 .card-container {
@@ -9,11 +13,20 @@
   padding: 1rem;
   text-align: center;
 
+  @media (max-width: 780px) {
+    margin-top: 10%;
+    grid-template-columns: auto;
+  }
+
   &__movie {
     width: 70%;
     cursor: pointer;
     margin: 20px;
     border-radius: 3px;
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+
+    @media (max-width: 780px) {
+      width: 50%;
+      grid-template-columns: auto;
+    }
   }
 }
