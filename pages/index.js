@@ -55,7 +55,7 @@ export default {
     return (
       <div>
         {this.loading ? (
-          <VLoading class="loading" />
+          <VLoading />
         ) : (
           <div>
             <VSearch
