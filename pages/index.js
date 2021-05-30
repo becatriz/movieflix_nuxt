@@ -6,7 +6,6 @@ import "./_styles.scss";
 
 export default {
   name: "Home",
-
   layout: "movies",
   data: () => ({
     query: "",
@@ -19,17 +18,17 @@ export default {
     ...mapState("Movie", ["movies"])
   },
 
-  async fetch() {
+  async created() {
     if (this.movies.query) {
       await this.getMovies(this.movies.query);
-      return;
+    } else {
+      await this.getMovies("animation");
     }
-    await this.getMovies("aventuras");
   },
 
   methods: {
     ...mapMutations("Movie", ["updateMoviesQuery"]),
-    async getMovies(query = "drama", pagination = "1") {
+    async getMovies(query = "animation", pagination = "1") {
       this.updateMoviesQuery(query);
 
       if (query) {
@@ -65,7 +64,11 @@ export default {
                 {movies.Poster != "N/A" && (
                   <VCards>
                     <div slot="card">
-                      <img class="card-container__movie" src={movies.Poster} />
+                      <img
+                        class="card-container__movie"
+                        src={movies.Poster}
+                        alt="Poster filme"
+                      />
                     </div>
                   </VCards>
                 )}

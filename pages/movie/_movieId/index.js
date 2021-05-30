@@ -34,7 +34,11 @@ export default {
                   Language: {this.response.Language}
                 </p>
               </div>
-              <img class="movie__poster" src={this.response.Poster} />
+              <img
+                class="movie__poster"
+                src={this.response.Poster}
+                alt="Poster filme"
+              />
             </div>
           </div>
         ) : (
