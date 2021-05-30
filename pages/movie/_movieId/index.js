@@ -1,5 +1,3 @@
-import { VLoading } from "@/components/src/ui-components";
-
 import "./_styles.scss";
 
 export default {
@@ -16,7 +14,7 @@ export default {
   render() {
     return (
       <div>
-        {Object.values(this.response).length > 0 ? (
+        {Object.values(this.response).length > 0 && (
           <div>
             <i
               onClick={() => this.$router.go(-1)}
@@ -41,8 +39,6 @@ export default {
               />
             </div>
           </div>
-        ) : (
-          <VLoading />
         )}
       </div>
     );

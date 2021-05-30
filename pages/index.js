@@ -11,7 +11,7 @@ export default {
     query: "",
     page: "",
     response: [],
-    loading: false
+    loading: true
   }),
 
   computed: {
@@ -22,13 +22,13 @@ export default {
     if (this.movies.query) {
       await this.getMovies(this.movies.query);
     } else {
-      await this.getMovies("animation");
+      await this.getMovies("marvel");
     }
   },
 
   methods: {
     ...mapMutations("Movie", ["updateMoviesQuery"]),
-    async getMovies(query = "animation", pagination = "1") {
+    async getMovies(query, pagination = "1") {
       this.updateMoviesQuery(query);
 
       if (query) {
