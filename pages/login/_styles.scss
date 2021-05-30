@@ -14,7 +14,7 @@ form h3 {
   color: #3498db;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-form input[type="text"],
+form input[type="email"],
 form input[type="password"] {
   width: 100%;
   height: 45px;
@@ -37,7 +37,7 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: #16a085;
 }
-form input[type="text"]:focus {
+form input[type="email"]:focus {
   outline: 0;
 }
 form input[type="password"]:focus {

@@ -8,7 +8,7 @@ export default {
       <div>
         <form>
           <h3>Acessar minha conta</h3>
-          <input id="email" type="text" name="email" placeholder="Email." />
+          <input id="email" type="email" name="email" placeholder="Email." />
           <input
             id="password"
             type="password"
