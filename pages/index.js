@@ -2,8 +2,6 @@ import { VSearch, VCards, VLoading } from "@/components/src/ui-components";
 
 import { mapMutations } from "vuex";
 
-import "./_styles.scss";
-
 export default {
   name: "Home",
   layout: "movies",
