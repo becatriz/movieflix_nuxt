@@ -28,6 +28,8 @@ export default {
                 <p>Language: {this.response.Language}</p>
               </div>
               <img
+                width="30%"
+                height="30%"
                 class="movie__poster"
                 src={this.response.Poster}
                 alt="Poster filme"

@@ -1,5 +1,7 @@
 import "./_styles.scss";
 
+import logo from "@/assets/img/logo.png";
+
 export const VHeader = {
   name: "VHeader",
   render() {
@@ -17,7 +19,9 @@ export const VHeader = {
           <a href="/">
             <img
               class="logo"
-              src="https://fontmeme.com/permalink/210529/a10ff39362675073624aaa0ac10d34fe.png"
+              width="12%"
+              height="40%"
+              src={logo}
               alt="imagem logo"
             />
           </a>
