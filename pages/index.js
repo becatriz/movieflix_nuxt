@@ -62,7 +62,7 @@ export default {
             <div class="card-container">
               {this.response.Search.map(movies => (
                 <nuxt-link to={`/movie/${movies.imdbID}`}>
-                  {movies.Poster != "N/A" && (
+                  {movies.Poster ? (
                     <VCards>
                       <div slot="card">
                         <img
@@ -73,6 +73,8 @@ export default {
                         />
                       </div>
                     </VCards>
+                  ) : (
+                    <VLoading />
                   )}
                 </nuxt-link>
               ))}

@@ -10,13 +10,13 @@ export const VHeader = {
         <nav class="menu">
           <ul>
             <li>
-              <a href="/">Home</a>
+              <nuxt-link to="/">Home</nuxt-link>
             </li>
             <li>
-              <a href="/login">Login</a>
+              <nuxt-link to="/login">Login</nuxt-link>
             </li>
           </ul>
-          <a href="/">
+          <nuxt-link to="/">
             <img
               class="logo"
               width="12%"
@@ -24,7 +24,7 @@ export const VHeader = {
               src={logo}
               alt="imagem logo"
             />
-          </a>
+          </nuxt-link>
         </nav>
       </div>
     );
