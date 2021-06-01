@@ -1,4 +1,9 @@
-import { VSearch, VCards, VLoading } from "@/components/src/ui-components";
+import {
+  VSearch,
+  VCards,
+  VLoading,
+  VNotFound
+} from "@/components/src/ui-components";
 
 import { mapMutations } from "vuex";
 
@@ -58,25 +63,28 @@ export default {
               class="search"
               onSearch={search => this.getMovies(search)}
             />
-
-            <div class="card-container">
-              {this.response.Search.map(movies => (
-                <nuxt-link to={`/movie/${movies.imdbID}`}>
-                  {movies.Poster !== "N/A" && (
-                    <VCards>
-                      <div slot="card">
-                        <img
-                          width="80%"
-                          height="80%"
-                          src={movies.Poster}
-                          alt="Poster filme"
-                        />
-                      </div>
-                    </VCards>
-                  )}
-                </nuxt-link>
-              ))}
-            </div>
+            {this.response.Search ? (
+              <div class="card-container">
+                {this.response.Search.map(movies => (
+                  <nuxt-link to={`/movie/${movies.imdbID}`}>
+                    {movies.Poster !== "N/A" && (
+                      <VCards>
+                        <div slot="card">
+                          <img
+                            width="80%"
+                            height="80%"
+                            src={movies.Poster}
+                            alt="Poster filme"
+                          />
+                        </div>
+                      </VCards>
+                    )}
+                  </nuxt-link>
+                ))}
+              </div>
+            ) : (
+              <VNotFound />
+            )}
           </div>
         )}
       </div>

@@ -1,13 +1,11 @@
-import "./_styles.scss";
-
 export default {
   name: "layout-error",
   render(h) {
     return (
       <div class="error-page">
-        <h1>Oops, nenhum filme encontrado!</h1>
+        <h1>Oops, página não encontrada!</h1>
         <p>
-          Voltar para <a href="/">home</a>
+          Voltar para o <a href="/">site</a>
         </p>
       </div>
     );
