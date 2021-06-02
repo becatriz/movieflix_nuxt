@@ -3,6 +3,7 @@ dotenv.config();
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  ssr: true,
   head: {
     title: "movieflix",
     htmlAttrs: {

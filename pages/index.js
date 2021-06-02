@@ -12,7 +12,6 @@ export default {
   layout: "movies",
   data: () => ({
     query: "",
-    page: "",
     loading: false
   }),
 
