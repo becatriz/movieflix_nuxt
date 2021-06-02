@@ -21,7 +21,7 @@ export default {
     if (movies.query) query = movies.query;
 
     const response = await $axios.$get(
-      `https://www.omdbapi.com/?apikey=${process.env.VUE_APP_API_KEY}&/&s=${query}&page=${pagination}`
+      `?apikey=${process.env.VUE_APP_API_KEY}&/&s=${query}&page=${pagination}`
     );
     return { response };
   },
@@ -35,7 +35,7 @@ export default {
         this.setStateLoading(true);
         try {
           const response = await this.$axios.$get(
-            `https://www.omdbapi.com/?apikey=${process.env.VUE_APP_API_KEY}&/&s=${query}&page=${pagination}`
+            `?apikey=${process.env.VUE_APP_API_KEY}&/&s=${query}&page=${pagination}`
           );
           this.response = response;
         } catch (error) {

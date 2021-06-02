@@ -72,6 +72,9 @@ export default {
   generate: {
     fallback: true
   },
+  axios: {
+    baseURL: process.env.VUE_API_URL || "http://localhost:3000/"
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxtjs/axios"],

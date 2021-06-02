@@ -3,7 +3,7 @@ export default {
 
   async asyncData(context) {
     const response = await context.$axios.$get(
-      `https://www.omdbapi.com/?apikey=${process.env.VUE_APP_API_KEY}&/&i=${context.params.movieId}`
+      `?apikey=${process.env.VUE_APP_API_KEY}&/&i=${context.params.movieId}`
     );
 
     return { response };
